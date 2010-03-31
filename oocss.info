@@ -1,0 +1,34 @@
+; $Id: oocss.info,v 1.2 2009/07/16 03:48:49 posco Exp $
+
+name = Object Oriented CSS Base Theme
+description = A base theme similar in concept to Zen. Based on the OOCSS framework by Nicole Sullivan.
+
+core = 6.x
+engine = phptemplate
+
+;
+; Override Drupal core styles.
+;
+stylesheets[all][] = node.css
+stylesheets[all][] = admin.css
+stylesheets[all][] = defaults.css
+stylesheets[all][] = system.css
+stylesheets[all][] = system-menus.css
+sytlesheets[all][] = user.css
+
+;
+; Bring in OOCSS framework.
+;
+stylesheets[all][] = oocss/core/libraries.css
+stylesheets[all][] = oocss/core/template/template.css
+stylesheets[all][] = oocss/core/grid/grids.css
+stylesheets[all][] = oocss/core/content.css
+stylesheets[all][] = oocss/core/module/mod.css
+stylesheets[all][] = oocss/core/module/mod_skins.css
+stylesheets[all][] = style.css
+; Information added by drupal.org packaging script on 2009-08-24
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "oocss"
+datestamp = "1251116774"
+

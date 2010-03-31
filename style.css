@@ -1,0 +1,32 @@
+/* $Id: style.css,v 1.4 2009/08/13 19:44:57 posco Exp $ */
+
+/**
+ * @file
+ * The base styles for the OOCSS theme. Should be copied and then modified
+ * for sub-themes.
+ *
+ * This CSS file does contain CSS hacks. This conflicts with current Drupal
+ * coding standards for CSS (http://drupal.org/node/302199). This is done
+ * largely to keep all styles consistent with the base OOCSS libraries.
+ *
+ * Hacks used here and in OOCSS:
+ *   - Underscore Hack: http://en.wikipedia.org/wiki/CSS_filter#Underscore_hack
+ *   - Star Plus Hack: http://en.wikipedia.org/wiki/CSS_filter#Star_HTML_hack
+ *   - Overflow Float Clear: http://www.quirksmode.org/css/clearing.html
+ *   - Zoom hasLayout Hack: http://msdn.microsoft.com/en-us/library/bb250481%28VS.85%29.aspx
+ */
+
+/* OOCSS mod classes */
+.noCorners b.top, .noCorners b.bottom {
+  display: none;
+}
+
+/* List styles */
+.horzList li {
+  float: left; /* Give containing UL .line to clear. */
+}
+
+/* Grid sizes */
+.size1of10 {
+  width: 10%;
+}

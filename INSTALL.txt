@@ -1,0 +1,14 @@
+INSTALL
+-------
+
+
+Download oocss and unarchive oocss so it looks like so 
+
+oocss/
+	oocss/ 
+	
+or from the oocss theme directory if you have git just checkout the latest 
+
+git clone http://ocss url
+
+You should be good to go now 
