@@ -28,7 +28,7 @@
 		<!-- Logo -->
 			<div class="line">
 				<div class="leftCol size1of3">
-					<a class="siteLogo noLogo h1" href="<?php echo check_url($front_page); ?>" title="<?php echo check_plain($site_name); ?>"><?php echo check_plain($site_name); ?></a>
+					<a class="siteLogo h1" href="<?php echo check_url($front_page); ?>" title="<?php echo check_plain($site_name); ?>"><?php echo check_plain($site_name); ?></a>
 					<?php if ($site_slogan): ?>
 						<span class="siteSlogan h4"><?php echo $site_slogan; ?></span>
 					<?php endif ?>
