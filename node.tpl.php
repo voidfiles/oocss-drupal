@@ -39,18 +39,5 @@
     <div class="ft">
       <?php print $links; ?>
     </div>
-	<?php if($page){?>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	  (function() {
-	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	   dsq.src = 'http://alexkessinger.disqus.com/embed.js';
-	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	  })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=alexkessinger">comments powered by Disqus.</a></noscript>
-	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-   <?php } ?>
   </div>
 </div>
