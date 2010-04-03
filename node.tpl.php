@@ -9,12 +9,11 @@
  * view: http://api.drupal.org/api/file/modules/node/node.tpl.php/6.
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="mod node <?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' nodeUnpublished'; } ?> complex excerpt">
-  <b class="top"><b class="tl"></b><b class="tr"></b></b>
+<div id="node-<?php print $node->nid; ?>" class="node <?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' nodeUnpublished'; } ?> complex excerpt">
   <div class="inner">
     <?php if ($page == 0): ?>
       <div class="hd">
-        <h4 class="topper"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h4>
+        <h1><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h4>
       </div>
     <?php endif; ?>
     <div class="bd">
@@ -25,24 +24,33 @@
               <?php print $picture; ?>
             </div>
           <?php endif; ?>
-          
-          <?php if ($submitted): ?>
-            <div class="main">
-              <p><?php print $submitted; ?></p>
-            </div>
-          <?php endif; ?>
         </div>
       <?php endif; ?>
-      
+
       <?php if ($terms): ?>
         <?php print $terms; ?>
       <?php endif; ?>
       
       <?php print $content; ?>
+      <?php if ($submitted): ?>
+          <p><?php print $submitted; ?></p>
+      <?php endif; ?>
     </div>
     <div class="ft">
       <?php print $links; ?>
     </div>
+	<?php if($page){?>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://alexkessinger.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=alexkessinger">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+   <?php } ?>
   </div>
-  <b class="bottom"><b class="bl"></b><b class="br"></b></b>
 </div>

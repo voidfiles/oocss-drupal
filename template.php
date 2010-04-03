@@ -63,8 +63,8 @@ function oocss_oocss_mod($bd = NULL, $hd = NULL, $ft = NULL, $attributes = array
   $oocss_mod = trim($oocss_mod);
   $oocss_mod .= '>';
 
-  $oocss_mod .= '<b class="top"><b class="tl"></b><b class="tr"></b></b>';
-  $oocss_mod .= '<div class="inner">';
+  #$oocss_mod .= '<b class="top"><b class="tl"></b><b class="tr"></b></b>';
+  #$oocss_mod .= '<div class="inner">';
 
   if (isset($hd)) {
     $oocss_mod .= '<div class="hd">'. $hd .'</div>';
@@ -76,8 +76,8 @@ function oocss_oocss_mod($bd = NULL, $hd = NULL, $ft = NULL, $attributes = array
     $oocss_mod .= '<div class="ft">'. $ft .'</div>';
   }
 
-  $oocss_mod .= '</div>';
-  $oocss_mod .= '<b class="bottom"><b class="bl"></b><b class="br"></b></b>';
+  #$oocss_mod .= '</div>';
+  #$oocss_mod .= '<b class="bottom"><b class="bl"></b><b class="br"></b></b>';
   $oocss_mod .= '</div>';
   
   return $oocss_mod;

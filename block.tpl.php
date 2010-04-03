@@ -9,17 +9,15 @@
  * view: http://api.drupal.org/api/file/modules/system/block.tpl.php/6.
  */
 ?>
-<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="mod block basic nicole">
-  <b class="top"><b class="tl"></b><b class="tr"></b></b>
+<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block basic ">
   <div class="inner">
     <?php if (!empty($block->subject)): ?>
       <div class="hd">
-        <h4><?php print $block->subject ?></h4>
+        <em class="h3"><?php print $block->subject ?></em>
       </div>
     <?php endif;?>
     <div class="bd">
       <?php print $block->content ?>
     </div>
   </div>
-  <b class="bottom"><b class="bl"></b><b class="br"></b></b>
 </div>
