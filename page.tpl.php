@@ -63,7 +63,7 @@
 			<?php endif; ?>
     	</div>
 		<?php if ($subHead): ?>
-    	<div class="subHead">
+    	<div class="subHead line">
 			<?php if ($is_front && $mission): ?>
 				<div class="mod mission pop sommers">
 					<div class="bd">

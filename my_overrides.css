@@ -50,13 +50,39 @@ html body {
     color: #000;
 }
 
+.subHead .block {
+    width:%33.3333;
+    float:right;
+}
+
 /* Views over rides */
 .view-dom-id-1 {
     padding-right:1em;
 }
 
-
-em.clickMe{
+h1 a:hover, .h1 a:hover,.h1:hover, h2 a:hover,.h2 a:hover, .h2:hover, h3 a:hover, .h3 a:hover, .h3:hover{
+    font-weight:bold;
+    text-decoration:none;
+}
+em.clickMe a{
     display:block;
-    margin:0 40px 20px 0;
+    margin:0 20px 10px 0;
+    padding:5px 20px 10px 5px;
+    background-color:#eee;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    border:2px solid #ccc;
+}
+
+
+.pane-content em.clickMe a{
+    background-color:transparent;
+    border:none;
+    color:#822700;
+    margin:0;
+    padding:0;
+    padding-bottom:1em;
+    margin-bottom:.5em;
+    border-bottom:1px solid #eee;
 }
